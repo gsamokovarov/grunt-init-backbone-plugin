@@ -1,4 +1,5 @@
 {
   "backbone-name.js": "backbone-{%= short_name %}.js",
-  "test/test-name.js": "test/test-{%= short_name %}.js"
+  "test/test-name.js": "test/test-{%= short_name %}.js",
+  "backbone/docs/images/*": false
 }
