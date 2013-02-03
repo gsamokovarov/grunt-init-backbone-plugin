@@ -19,11 +19,13 @@ module.exports = {
       init.prompt('grunt_version'),
       init.prompt('node_version', grunt['package'].engines.node)
     ], function(error, properties) {
-      properties.short_name = properties.name.replace(/^backbone[\-_\.]?/, '');
-      properties.main = 'Gruntfile.js';
-      properties.npm_test = 'grunt test';
-      properties.keywords = ['backbone', 'plugin'];
-      properties.devDependencies = {grunt: '0.4.0rc7'};
+      grunt.util._.extend(properties, {
+        short_name: properties.name.replace(/^backbone[\-_\.]?/, ''),
+        main: 'Gruntfile.js',
+        npm_test: 'grunt test',
+        keywords: ['backbone', 'plugin'],
+        devDependencies: {grunt: '0.4.0rc7'}
+      });
 
       var files = init.filesToCopy(properties);
 
