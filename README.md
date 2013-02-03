@@ -11,7 +11,7 @@ Once grunt-init is installed, place this template in your `~/.grunt-init/` direc
 git clone --recursive https://github.com/gsamokovarov/grunt-init-backbone-plugin.git ~/.grunt-init/backbone-plugin
 ```
 
-Don't forget the `--recursive` flag, it is important for the project skeleton to include the required submodules.
+Don't forget the `--recursive` flag! It is important for the project skeleton to include the required submodules.
 
 _(Windows users, see [the documentation][grunt-init] for the correct destination directory path)_
 
