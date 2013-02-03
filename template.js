@@ -9,7 +9,7 @@ module.exports = {
       init.prompt('name', function(value, props, done) {
         if (!/^backbone/.test(value)) {
           var message = 'It is recommended to prefix the project name with "backbone".';
-          grunt.log.writelns(message.red);
+          grunt.log.writelns(message.yellow);
         }
         done(null, value);
       }),
