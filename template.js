@@ -19,7 +19,7 @@ module.exports = {
       init.prompt('grunt_version'),
       init.prompt('node_version', grunt['package'].engines.node)
     ], function(error, properties) {
-      // Set a few grunt-plugin-specific properties.
+      properties.short_name = properties.name.replace(/^backbone[\-_\.]?/, '');
       properties.main = 'Gruntfile.js';
       properties.npm_test = 'grunt test';
       properties.keywords = ['backbone', 'plugin'];
