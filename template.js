@@ -20,7 +20,6 @@ module.exports = {
       init.prompt('node_version', grunt['package'].engines.node)
     ], function(error, properties) {
       grunt.util._.extend(properties, {
-        suffix_name: properties.name.replace(/^backbone/, ''),
         short_name: properties.name.replace(/^backbone[\-_\.]?/, ''),
         main: 'Gruntfile.js',
         npm_test: 'grunt test',
