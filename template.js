@@ -18,20 +18,18 @@ module.exports = {
       init.prompt('author_url'),
       init.prompt('grunt_version'),
       init.prompt('node_version', grunt['package'].engines.node)
-    ], function(err, props) {
+    ], function(error, properties) {
       // Set a few grunt-plugin-specific properties.
-      props.main = 'Gruntfile.js';
-      props.npm_test = 'grunt test';
-      props.keywords = ['backbone', 'plugin'];
-      props.devDependencies = {
-        'grunt': '0.4.0rc7'
-      };
+      properties.main = 'Gruntfile.js';
+      properties.npm_test = 'grunt test';
+      properties.keywords = ['backbone', 'plugin'];
+      properties.devDependencies = {grunt: '0.4.0rc7'};
 
-      var files = init.filesToCopy(props);
+      var files = init.filesToCopy(properties);
 
-      init.addLicenseFiles(files, props.licenses);
-      init.copyAndProcess(files, props);
-      init.writePackageJSON('package.json', props);
+      init.addLicenseFiles(files, properties.licenses);
+      init.copyAndProcess(files, properties);
+      init.writePackageJSON('package.json', properties);
 
       done();
     });
