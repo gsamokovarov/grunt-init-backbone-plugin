@@ -30,7 +30,10 @@ module.exports = {
         main: 'Gruntfile.js',
         npm_test: 'grunt test',
         keywords: ['backbone', 'plugin'],
-        devDependencies: {grunt: '0.4.0rc7'}
+        devDependencies: {
+          'grunt-contrib-qunit': '0.1.1rc6',
+          'grunt': '0.4.0rc7'
+        }
       });
 
       var files = init.filesToCopy(properties);
