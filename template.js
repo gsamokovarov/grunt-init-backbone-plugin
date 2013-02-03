@@ -6,7 +6,13 @@ module.exports = {
 
   template: function(grunt, init, done) {
     init.process({type: 'grunt'}, [
-      init.prompt('name'),
+      init.prompt('name', function(value, props, done) {
+        if (!/^backbone/.test(value)) {
+          var message = 'It is recommended to prefix the project name with "backbone".';
+          grunt.log.writelns(message.red);
+        }
+        done(null, value);
+      }),
       init.prompt('description'),
       init.prompt('version'),
       init.prompt('repository'),
