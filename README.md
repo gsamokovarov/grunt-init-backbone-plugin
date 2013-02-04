@@ -29,12 +29,12 @@ _Note that this template will generate files in the current directory, so be sur
 
 ## Manifesto
 
-The plugin project structure is based on a simple manifesto, about what a backbone plugin should do:
+The plugin project structure is based on a simple manifesto, about what a [Backbone][] plugin should and should not do:
 
 1. Plugins should **enchance** [Backbone][], not change it.
 2. It is _OK_ to monkey-patch [Backbone][] as long as **1.** stands true.
 
-Preserving the [Backbone][] internal behaviour is pretty essential so we can play nicely with other plugins. If you need to change internal behaviour, do that in a _fork_ and *not* in a plugin.
+Preserving the [Backbone][] internal behaviour is pretty essential so we can play nicely with other plugins. If you need to change internal behaviour, do that in a _fork_ and not in a plugin.
 
 To ensure that we are a _nice_ plugin, the auto-generated `test/index.html` runs the [Backbone][] own tests before the plugin ones.
 
