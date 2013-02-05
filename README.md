@@ -38,5 +38,9 @@ Preserving the [Backbone][] internal behaviour is pretty essential so we can pla
 
 To ensure that we are a _nice_ plugin, the auto-generated `test/index.html` runs the [Backbone][] own tests before the plugin ones.
 
+## Contributing
+
+Contribution are very welcome! If you have any ideas of how a better [Backbone][] plugin layout should look like, please share them at the Github issue tracker.
+
 [grunt-init]: http://gruntjs.com/project-scaffolding
 [Backbone]: http://backbonejs.org
