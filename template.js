@@ -1,6 +1,6 @@
 module.exports = {
-  description: 'Create a backbone plugin template with grunt-init.',
-  notes: 'Create backbone plugin project templates with ease.',
+  description: 'Create a Backbone plugin template with grunt-init.',
+  notes: 'Create Backbone plugin project templates with ease.',
 
   warnOn: '*',
 
