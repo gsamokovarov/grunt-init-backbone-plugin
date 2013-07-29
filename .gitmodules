@@ -1,3 +1,3 @@
 [submodule "root/backbone"]
-	path = root/backbone
+	path = root/vendor/backbone
 	url = https://github.com/documentcloud/backbone.git
